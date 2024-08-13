@@ -1,0 +1,7 @@
+1. Ao acordar, abro o olho;
+2. Pego o meu celular;
+3. Se o meu celular estiver alarmando;
+  1. Desligo o alarme;
+  2. Vou à cozinhar para tomar café;
+4. Se não
+  1. Vou à cozinhar para tomar café;
