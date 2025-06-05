@@ -1,0 +1,17 @@
+Pilha;
+  Push: O(1) pois está apenas adicionando um item na pilha.
+  Pop: O(1) apenas remove o último item da pilha.
+
+Fila;
+  Enqueue: O(1) apenas adiciona um inteiro no fim da fila
+  Dequeue: O(1) Remove o primeiro item da fila.
+  Rear: O(n) precisa passar por todos os itens da fila para verificar quem está no final.
+  Front: O(1) apenas retorna o primeiro item da fila.
+Lista Encadeada;
+  Push: O(n) precisa passar por toda a lista para adicionar um nó no final.
+  Pop: O(n) precisa passar por toda a lista para remover o ultimo nó.
+  Insert: O(1) insere um item na posição indicada, não precisa percorrer toda a lista.
+  Remove: O(1) remove um item na posição indicada, não precisa percorrer toda a lista.
+  elementAt: O(1) retora o elemento que está o índice indicado.
+
+No HashMap foi utilizado um hash direto, ele mapeia diretamente uma chave para um índice na tabela hash, sem necessidade de cálculo extra ou tratamento de colisões.
