@@ -1,0 +1,5 @@
+1. Fere o código limpo pois é uma função com muitos parâmetros, o ideal é ter de zero a três parâmetros. Mais do que isso é um sinal de que o a função está fazendo demais.
+
+2. É ruim pois o nome não explica qual a função do método.
+
+3.  Pois as funções devem fazer uma única coisa.
