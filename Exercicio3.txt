@@ -1,0 +1,1 @@
+Sim, eu conseguiria entender o código sem documentá-lo, porém a documentação torna mais fácil entender o que cada método faz.
