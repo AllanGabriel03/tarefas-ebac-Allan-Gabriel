@@ -1,0 +1,9 @@
+1) Microsserviços são uma forma de estruturar um software, dividindo em serviços independentes que realizam tarefas específicas. Contêineres são uma tecnologia que permite empacotar uma aplicação e suas dependências em um ambiente isolado, garantindo que a aplicação funcione da mesma forma em diferentes ambientes.
+
+Sim, é possível executar microsserviços em máquinas virtuais. Máquinas virtuais oferecem flexibilidade para escolher diferentes sistemas operacionais e configurações para cada microsserviço.
+
+2) Os desenvolvedores precisam fazer merge frequente porque a integração contínua funciona melhor quando todas as partes do sistema estão sempre atualizadas e testadas juntas. A integração contínua só é "contínua" se as mudanças entram rápido no código principal, permitindo detectar e corrigir problemas cedo, antes que eles virem um caos.
+
+3) Se não houver testes suficientes, cada alteração no código traz o risco de quebrar funcionalidades antigas sem que ninguém perceba. Isso faria com que a equipe tivesse medo de implantar rápido, atrasando entregas e destruindo a ideia de “contínuo”.
+
+4) Entrega contínua o código é integrado, testado e preparado para ir à produção a qualquer momento, mas a decisão de realmente implantar é manual. Implantação contínua assim que o código passa por todos os testes e validações automáticas, ele vai para produção automaticamente, sem intervenção humana.
