@@ -1,0 +1,13 @@
+Exercício 1:
+ Dependências: Um serviço deve declarar explicitamente todas as suas dependências e não presumir que elas já estão instaladas no ambiente. Cada microsserviço deve ser autossuficiente. Se ele depende de bibliotecas, drivers ou ferramentas externas que não estão declarados, vai quebrar quando rodar em outro ambiente, você pode empacotar o serviço em um container Docker ou rodá-lo em um servidor diferente sem procurar o que está faltando.
+
+Logs: Ao enviar logs para uma ferramenta central, você consegue rastrear requisições ponta a ponta, entender falhas e medir performance. Microsserviços podem escalar dinamicamente. Logs centralizados garantem que, mesmo que uma instância seja desligada, os registros não se percam.
+
+Processos de Administração: Tarefas administrativas devem ser executadas como processos únicos e pontuais, separados da execução normal do serviço. Evita que comandos de manutenção fiquem embutidos no código principal e rodem por engano durante a execução. Uma tarefa administrativa que falha não afeta a API ou a lógica principal do serviço.
+
+Exercício 2:
+ Se uma instância cair, outra assume sem perder informações, já que nada essencial estava “guardado” só na memória dela e é possível reiniciar, atualizar ou substituir instâncias sem interromper sessões de usuário.
+ Em CI/CD, você pode substituir instâncias gradualmente sem quebrar usuários no meio de uma requisição, porque não há estado local que precise ser migrado. Se algo der errado no deploy, é só matar a nova versão e voltar a anterior, sem se preocupar em “migrar estado de volta”.
+
+ Se o serviço tiver estado e tiver que matar uma de suas instâncias, se o estado estava apenas na memória local (por exemplo, dados de sessão do usuário, carrinho de compras, progresso de um processo), tudo isso vai desaparecer junto com a instância.
+Resultado: usuários podem ser deslogados, transações podem falhar, e processos em andamento podem reiniciar do zero.
